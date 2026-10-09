@@ -1,0 +1,200 @@
+
+/* ==============================
+   EMPLOYEE MANAGEMENT SYSTEM
+   Modern Dashboard UI
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+
+/* Main heading */
+h1 {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+    margin: -30px -20px 30px;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 18px rgba(37, 99, 235, 0.15);
+}
+
+/* Content sections */
+h2 {
+    color: #172554;
+    font-size: 22px;
+    margin: 30px 0 16px;
+    padding-left: 12px;
+    border-left: 5px solid #3b82f6;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.07);
+}
+
+/* Form inputs */
+input,
+select {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 14px;
+    margin: 5px 4px 10px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.13);
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* Buttons */
+button {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 18px;
+    margin: 4px 3px 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s,
+                box-shadow 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Search input */
+input[placeholder*="Search"] {
+    min-width: 260px;
+    max-width: 100%;
+}
+
+/* Employee table */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+/* Table headings */
+th {
+    background: #172554;
+    color: white;
+    padding: 15px 12px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+/* Table cells */
+td {
+    padding: 13px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tbody tr:hover {
+    background: #eff6ff;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Action buttons inside the table */
+td button {
+    padding: 7px 12px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+td button:hover {
+    box-shadow: none;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 22px 12px;
+        margin: -15px -15px 20px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    input[placeholder*="Search"] {
+        min-width: 0;
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
